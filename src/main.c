@@ -21,7 +21,7 @@ int main(int argc, char** argv) {
     /* tokeniza e inicializa stream para o parser */
     lexer_init(input, lexFile, errFile);
 
-    /* lê o primeiro token do programa (conforme especificação) */
+    /* lê o primeiro token do programa */
     lexer_next();
 
     /* chamada ao símbolo inicial */
