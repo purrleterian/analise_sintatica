@@ -10,6 +10,7 @@
 <ID, x> 5 3
 <OP_ASS, :=> 5 5
 <NUM_INT, 2> 5 8
+<OP_AD, +> 5 10
 <SYMBOL, (> 5 12
 <NUM_INT, 1> 5 13
 <OP_AD, +> 5 15

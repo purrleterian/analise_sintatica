@@ -155,6 +155,13 @@ void runLexer(char* input, FILE* lexFile, FILE* errFile) {
             continue;
         }
 
+        if (input[i] == '=') {
+            writeToken(lexFile, "OP_EQ", "=", line, col);
+            i++;
+            col++;
+            continue;
+        }
+
         if (input[i] == '<') {
             if (input[i + 1] == '=') {
                 writeToken(lexFile, "OP_LE", "<=", line, col);
