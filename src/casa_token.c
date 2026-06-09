@@ -65,7 +65,7 @@ void parseProgram() {
         VarPart();
     }
 
-    CompoundCommand();
+    Composto();
     CasaToken(".");
 
     Token* cur = lexer_getCurrent();
@@ -157,7 +157,7 @@ static void Statement() {
         CasaToken("OP_ASS");
         Expr();
     } else if (strcmp(t->type, "KW_BEGIN") == 0) {
-        CompoundCommand();
+        Composto();
     } else if (strcmp(t->type, "KW_IF") == 0) {
         printf(
             "<comando condicional> ::= if <expressao> then <comando> [ else "
